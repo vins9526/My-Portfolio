@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!--------Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--------========= css =======-->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="main.js">
+</head>
+<body>
+    <!--------========= Header =======-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Vinayak</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <li class="nav__items">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav__items"> -->
+                        <!-- <a href="#work" class="nav__link"> -->
+                            <!-- <i class='bx bx-briefcase-alt-2'></i> -->
+                        <!-- </a> -->
+                    <!-- </li> -->
+
+                    <li class="nav__items">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+
+
+    <!--================MAIN=========-->
+    <main class="main">
+
+
+
+        <!--============HOME============-->
+        <section class="home section" id="home">
+            <div class="home__container container  grid">
+                
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Vinayak B Hulyal</h1>
+                    <h3 class="home__education">Frontend Developer</h3>
+
+                    <div class="home__buttons">
+                        <a  download="" href="VINAYAK resume.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="IMG_7130.jpg" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/vinayak-hulyal-a1a395227/"  target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin-square' ></i>
+                    </a>
+
+                    <a href="https://github.com/vins9526" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class="bx bx-mouse home__scroll-icon"></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!----==========ABOUT==========-->
+        <section class="about section" id="about">
+            <!-- <span class="section__subtitle">My Intro</span> -->
+            <!-- <h2 class="section__title">About Me</h2> -->
+
+
+            <div class="about__container container grid">
+                
+                
+                <div class="top__section">
+                    
+                    <img src="my photo.jpeg" alt="" class="about__img">
+                    <h1>About Me</h1>
+                    <p>
+                        I have a flair for learning new things and persistence 
+                        in problem solving. I strongly believe that with my skills, 
+                        Analytical and Logical ability, Determination, Dedication, 
+                        Commitment and Diligent efforts, 
+                        I can prove to be an asset to any organization
+                    </p>
+                </div>
+
+                    
+                <div class="skills"  id="#skills">
+                    <h3>Skills</h3>
+                    <div class="skills-items">HTML</div>
+                    <div class="skills-items">CSS</div>
+                    <div class="skills-items">JAVASCRIPT</div>
+                    <div class="skills-items">PYTHON</div>
+                </div>
+                
+                
+                <div class="timeline">
+                    <div class="line"></div>
+
+                    <div class="section1">
+                        <div class="timeline-items">
+                            <span class="date">2019-2022</span>
+                            <h2>Bachelor Of Engineering - KLE Institute Of Technology</h2>
+                        </div>
+                    </div>
+
+                    <div class="section1">
+                        <div class="timeline-items">
+                            <span class="date">2014-2019</span>
+                            <h2>Diploma - CI Munavalli Polytechnic</h2>
+                        </div>
+                    </div>
+
+                    <div class="section1">
+                        <div class="timeline-items">
+                            <span class="date">2014</span>
+                            <h2>SSLC - Sacred Heart English Medium School</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!----==========contact==========-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Talk to me</h3>
+
+                    <div class="contact_info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">hulyalvinayak@gmail.com</span>
+
+                            <a href="mailto:hulyalvinayak@gmail.com" target="_blank" class="contact__button">
+                                Write me<i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">9632560864</span>
+
+                            <a href="https://wa.me/9632560864?text=Hello!!" target="_blank" class="contact__button">
+                                Write me<i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-messenger contact__card-icon' ></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">Facebook</span>
+
+                            <a href="https://www.facebook.com/messages/t/100032083666187/" target="_blank" class="contact__button">
+                                Write me<i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Contact Me</h3>
+
+                    <form action="" class="contact__form">
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text"  placeholder="Insert Your Name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="email" placeholder="Insert Your Email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact_form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact__form-input" ></textarea>
+                        </div>
+
+                        <button class="button">Send Message</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--===============footer===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Vinayak Hulyal</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="footer__link">Contact Me</a>
+                </li>
+            </ul>    
+
+            <ul class="footer__social">
+                <a href="https://www.facebook.com/vinayak.hulyal/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+
+                <a href="https://www.instagram.com/vins_hulyal/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+
+                <a href="https://twitter.com/VHulyal" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </ul>
+            
+            <span class="foooter__copy">
+            
+            </span>
+
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
